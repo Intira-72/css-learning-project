@@ -1,4 +1,36 @@
-p {
-    font-size: 64px;
-    color: darkgray;
+/* * {
+    font-family: monospace;
+} */
+
+html {
+    font-size: 22px;
 }
+
+body {
+    
+}
+
+main {
+    font-family: monospace;
+}
+
+p {
+    color: darkred;
+}
+
+.highlight {
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+.gray {
+    color: gray;
+}
+
+#second {
+    font-style: italic;
+}  

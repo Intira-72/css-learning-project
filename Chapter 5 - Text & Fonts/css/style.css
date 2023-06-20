@@ -1,5 +1,8 @@
 /* Typography is the way that text is arranged and presented. */
 
+/* import font from google in css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
 body {
     padding: 25%;
     font-size: 2rem;
@@ -21,4 +24,4 @@ p {
 
 /* input, button {
     font-size: inherit;
-} */
+} */ 

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1rem "Inter", sans-serif;
+    min-height: 100vh;
+
+    background-color: #475569;
+    background-image: radial-gradient(whitesmoke, #475569);
+    display: flex;
+    flex-direction: column;
+}
+
+header, main, nav, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header, footer {
+    position: sticky;
+    background-color: #1e293b;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+}
+
+nav {
+    background-color: #fff;
+    color: black;
+    padding: 0.5rem;
+    border-bottom: 2px solid black;    
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    bottom: 0;
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 576px) {
+    body {
+        background-color: darkolivegreen;
+        background-image: radial-gradient(whitesmoke, darkolivegreen);
+    }
+
+    nav {
+        display: none;
+    }
+}
+
+/* MEDIUM SCREEN */
+@media screen and (min-width: 768px) {
+    body {
+        background-color: darkred;
+        background-image: radial-gradient(whitesmoke, darkred);
+    }
+}
+
+/* LARGE SCREEN */
+@media screen and (min-width: 992px) {
+    body {
+        background-color: darkgoldenrod;
+        background-image: radial-gradient(whitesmoke, darkgoldenrod);
+    }
+}
+
+/* XL SCREEN */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: darkblue;
+        background-image: radial-gradient(whitesmoke, darkblue);
+    }
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+    body {
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke, dodgerblue);
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: none;
+    }
+}

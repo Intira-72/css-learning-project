@@ -57,3 +57,17 @@ div:last-child {
     /* transform: rotateZ(45deg); */
     /* transform: translate(100%, -2rem); */
 }
+
+div:hover {
+    background-color: midnightblue;
+    transition: all 2s ease-in-out 0.5s;
+    /* transition-timing-function: ease; */
+
+    /* transition-property: background-color, transform;
+    transition-duration: 2s, 3s;
+    transition-delay: 0.5s; */
+}
+
+div:last-child:hover {
+    transform: rotate(180deg);
+}

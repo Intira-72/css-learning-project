@@ -71,3 +71,35 @@ div:hover {
 div:last-child:hover {
     transform: rotate(180deg);
 }
+
+.animate {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: slide 5s ease-in-out 1s 5 alternate forwards;
+
+    /* animation-name: slide;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(300px) rotate(180deg);
+    }
+
+    66%{
+        transform: translateX(-300px) rotate(-180deg);
+    }
+
+    100%{
+        transform: translateX(0);
+        background-color: rebeccapurple;
+    }
+}
